@@ -1,1 +1,1 @@
-console.log("works");
+(()=>{const e=document.querySelector(".click"),t=document.querySelector(".links"),c=document.querySelector(".logoRestaurant");e.addEventListener("click",(()=>{t.classList.toggle("linksClick"),e.classList.toggle("click"),e.classList.toggle("clickAfter"),c.classList.toggle("logoRestaurantClick")}))})();
