@@ -55,7 +55,7 @@ body{
 .nav ul li:first-child{
     color: rgb(44, 253, 54);
 }
-.main{
+.home{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,11 +64,12 @@ body{
     height: 80vh;
     color: white;
     font-size: 40px;
+    visibility: hidden;
 }
-.main h1{
+.home h1{
     font-weight: 100;
 }
-.main button{
+.home button{
     margin-top: 10px;
     padding: 8px 20px;
     border-radius: 20px;
@@ -76,4 +77,30 @@ body{
     color: white;
     background-color: black;
     cursor: pointer;
+}
+.menu{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card{
+    width: 250px;
+    height: 300px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    opacity: 0.8;
+}
+.card .name{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.card .description{
+    margin-bottom: 30px;
+    width: 80%;
 }
