@@ -6,12 +6,17 @@
 body{
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    background-color: black;
     background: url('/dist/images/pexels-quark-studio-3201920.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow-x: hidden;
+}
+.contact{
+    width: 100%;
+    height: 100%;
 }
 .content .img{
     opacity: 0.7;
@@ -19,7 +24,7 @@ body{
     background-color: black;
     left: 0;
     top: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: -10;
 }
@@ -105,7 +110,7 @@ body{
 }
 .contact{
     width: 100vw;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,6 +127,26 @@ body{
 .click{
     cursor: pointer;
 }
+.home .imgTwo{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+    z-index: -10;
+}
+.imgThree{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    background-color: black;
+    left: 0;
+    top: 0;
+    z-index: -10;
+}
 .block .phone{
     margin-bottom: 20px;
 }
@@ -137,6 +162,7 @@ body{
     transform: translateY(-50%);
     right: 5%;
     cursor: pointer;
+    z-index: 100;
 }
 .logoRestaurantClick{
     visibility: hidden;
@@ -191,11 +217,53 @@ body{
         left: 0;
         background-color: black;
         color: white;
+        z-index: 99;
     }
     .linksClick ul{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+}
+@media only screen and (max-width: 1050px){
+    body{
+        overflow-y: unset;
+    }
+    .home h1{
+        font-size: 50px;
+    }
+    .menu{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .content .img{
+        height: 150vh;
+    }
+} 
+@media only screen and (max-width: 700px){
+    .home h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .home h1{
+        font-size: 30px;
+    }
+    .menu{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .content .img{
+        height: 280vh;
+    }
+    .block{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 300px;
+        height: 250px;
     }
 }

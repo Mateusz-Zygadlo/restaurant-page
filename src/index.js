@@ -1,12 +1,12 @@
 const navbar = () => {
-    const click1 = document.querySelector('.click');
+    const button = document.querySelector('.click');
     const navLinks = document.querySelector('.links');
     const logo = document.querySelector('.logoRestaurant');
 
-    click1.addEventListener('click', () => {
+    button.addEventListener('click', () => {
         navLinks.classList.toggle('linksClick');
-        click1.classList.toggle('click');
-        click1.classList.toggle('clickAfter');
+        button.classList.toggle('click');
+        button.classList.toggle('clickAfter');
         logo.classList.toggle('logoRestaurantClick');
     });
 }
