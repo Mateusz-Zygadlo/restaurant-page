@@ -42,7 +42,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 .nav ul{
     display: flex;
@@ -56,6 +55,9 @@ body{
     align-items: center;
     cursor: pointer;
     padding: 10px 40px;
+}
+.nav ul li:hover{
+    color: chartreuse;
 }
 .home{
     display: flex;

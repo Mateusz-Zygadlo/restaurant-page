@@ -5,54 +5,44 @@ import mediaHelpers from "./components/mediaHelpers";
 import handleNavLinks from "./components/handleNavLinks";
 import contactPage from "./components/contactPage";
 
-navbar();
-mediaHelpers();
-homePage();
-handleNavLinks();
-
 const content = document.querySelector('.content');
 
-document.addEventListener('click', (e) => {
-    const li = document.querySelectorAll('li');
-    let index;
-    
-    for(let i = 0; i < li.length; i++){
-        if(li[i].className == e.target.className){
-            index = i;
-        };
-    }
+const home = () => {
+    content.textContent = '';
+    navbar();
+    mediaHelpers();
+    homePage();
+    handleNavLinks();
+}
 
-    console.log(e.target.className);
+home();
 
+const menu = () => {
+    content.textContent = '';
+    navbar();
+    mediaHelpers();
+    menuPage();
+    handleNavLinks();
+}
+
+const contact = () => {
+    content.textContent = '';
+    navbar();
+    mediaHelpers();
+    contactPage();
+    handleNavLinks();
+}
+
+document.addEventListener('click', (e) => {  
     switch(e.target.className){
         case 'oneLi':
-            content.textContent = '';
-            navbar();
-            mediaHelpers();
-            homePage();
-            handleNavLinks();
+            home();
             break;
         case 'twoLi': 
-            content.textContent = '';
-            navbar();
-            mediaHelpers();
-            menuPage();
-            handleNavLinks();
+            menu();
             break;
         case 'threeLi':
-            content.textContent = '';
-            navbar();
-            mediaHelpers();
-            contactPage();
-            handleNavLinks();
-            break;
-        case 'logoNav':
-            content.textContent = '';
-            navbar();
-            mediaHelpers();
-            homePage();
-            handleNavLinks();
+            contact();
             break;
     }
-
 })
