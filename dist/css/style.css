@@ -38,7 +38,7 @@ body{
     font-size: 25px;
     z-index: 10;
 }
-.logo{
+.logoNav{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,9 +56,6 @@ body{
     align-items: center;
     cursor: pointer;
     padding: 10px 40px;
-}
-.nav ul li:first-child{
-    color: rgb(44, 253, 54);
 }
 .home{
     display: flex;
@@ -200,7 +197,7 @@ body{
         justify-content: flex-end;
     }
     
-    .logo{
+    .logoNav{
         padding: 15px 40px;
     }
     .links{

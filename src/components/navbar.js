@@ -6,7 +6,7 @@ const navbar = () => {
     nav.classList.add('nav');
 
     const logo = document.createElement('div');
-    logo.classList.add('logo');
+    logo.classList.add('logoNav');
     logo.textContent = 'Restaurant Page';
 
     const divLinks = document.createElement('div');
@@ -20,19 +20,19 @@ const navbar = () => {
     const ul = document.createElement('ul');
     
     const liOne = document.createElement('li');
-    liOne.classList.add('one');
+    liOne.classList.add('oneLi');
     liOne.textContent = 'home page';
 
     ul.appendChild(liOne);
 
     const liTwo = document.createElement('li');
-    liTwo.classList.add('two');
+    liTwo.classList.add('twoLi');
     liTwo.textContent = 'menu';
 
     ul.appendChild(liTwo);
 
     const liThree = document.createElement('li');
-    liThree.classList.add('three');
+    liThree.classList.add('threeLi');
     liThree.textContent = 'contact';
 
     ul.appendChild(liThree);

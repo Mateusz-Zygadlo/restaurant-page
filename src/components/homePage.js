@@ -16,7 +16,7 @@ const homePage = () => {
     home.appendChild(h1);
 
     const button = document.createElement('button');
-    button.classList.add('two');
+    button.classList.add('twoLi');
     button.textContent = 'go to the menu';
 
     home.appendChild(button);

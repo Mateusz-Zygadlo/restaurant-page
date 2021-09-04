@@ -22,27 +22,37 @@ document.addEventListener('click', (e) => {
         };
     }
 
+    console.log(e.target.className);
+
     switch(e.target.className){
-        case 'one':
+        case 'oneLi':
             content.textContent = '';
             navbar();
             mediaHelpers();
             homePage();
             handleNavLinks();
             break;
-        case 'two': 
+        case 'twoLi': 
             content.textContent = '';
             navbar();
             mediaHelpers();
             menuPage();
             handleNavLinks();
             break;
-        case 'three':
+        case 'threeLi':
             content.textContent = '';
             navbar();
             mediaHelpers();
             contactPage();
             handleNavLinks();
+            break;
+        case 'logoNav':
+            content.textContent = '';
+            navbar();
+            mediaHelpers();
+            homePage();
+            handleNavLinks();
+            break;
     }
 
 })
